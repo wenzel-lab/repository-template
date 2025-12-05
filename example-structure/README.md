@@ -54,7 +54,7 @@ This is **not a runnable project** - it's a template showing the structure. To u
 
 ## See Also
 
-- [INSTRUMENT_SOFTWARE_GUIDE.md](../templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md) - Complete guide
+- [Guide to software design for instrument control](../templates/guides/instrument-software-guide.md) - Complete guide
 - [QUICK_START.md](../templates/guides/QUICK_START.md) - Beginner-friendly explanation
 - [README.md](../README.md) - Repository template overview
 

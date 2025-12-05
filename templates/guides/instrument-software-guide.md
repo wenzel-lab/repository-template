@@ -23,9 +23,9 @@ A typical Wenzel-Lab instrument software repository should follow this minimal s
 ```text
 instrument-name/
 ├── README.md                      # Project overview (hardware + software)
-├── INSTRUMENT_SOFTWARE_GUIDE.md   # (Optional) This guide, or link to it
+├── instrument-software-guide.md   # (Optional) This guide, or link to it
 ├── instrument-config.yaml         # Main config file (single source of truth)
-├── requirements.txt               # Simple dependency list (or pyproject.toml - see explanation below)
+├── requirements.txt               # Simple dependency list
 ├── instrument/                    # Main Python package (no src/ folder - simpler!)
 │   ├── __init__.py
 │   ├── config.py                  # Pydantic or simple loader around YAML
@@ -53,60 +53,9 @@ instrument-name/
     └── test_gui_smoke.py
 ```
 
-### 📁 Understanding the Structure
+### Beginner-Friendly Structure
 
-#### Why `src/` folder?
-
-**What it is:** `src` stands for "source" - it's a folder that contains all your Python code.
-
-**Why use it?** This is a Python best practice that:
-- **Prevents import confusion**: Without `src/`, Python might accidentally import from your working directory instead of your installed package
-- **Separates code from other files**: Keeps your Python code separate from config files, README, tests, etc.
-- **Makes installation cleaner**: When you install your package, only the `src/` contents get installed
-
-**Is it required?** No! If you find it confusing, you can use a simpler structure:
-
-```text
-instrument-name/
-├── instrument/          # Your Python package (no src/ folder)
-│   ├── __init__.py
-│   ├── devices/
-│   └── ...
-├── tests/
-└── ...
-```
-
-**Recommendation:** Start simple! If your project is small and you're just learning, skip the `src/` folder. You can always add it later if needed.
-
-#### What is `pyproject.toml`?
-
-**What it is:** `pyproject.toml` is a configuration file (TOML = "Tom's Obvious Minimal Language") that tells Python tools about your project.
-
-**What it does:**
-- Lists your dependencies (what packages your code needs)
-- Defines project metadata (name, version, description)
-- Configures tools (like code formatters, linters)
-
-**Do you need it?** Not strictly! You can use simpler alternatives:
-
-**Option 1: `requirements.txt` (Simplest)**
-```text
-# requirements.txt
-numpy>=1.20.0
-pyvisa>=1.13.0
-pyqt5>=5.15.0
-```
-
-**Option 2: `pyproject.toml` (More modern, recommended)**
-- Better for complex projects
-- Can configure multiple tools in one file
-- Standard for modern Python projects
-
-**Recommendation:** For beginners, start with `requirements.txt`. It's simpler and easier to understand. You can switch to `pyproject.toml` later if you want.
-
-### 🎯 Simplified Structure (For Beginners)
-
-If the `src/` folder and `pyproject.toml` seem too complex, here's a simpler version:
+This structure is designed to be simple and accessible for interdisciplinary teams:
 
 ```text
 instrument-name/
@@ -122,12 +71,12 @@ instrument-name/
 └── tests/
 ```
 
-**This works just fine!** The `src/` and `pyproject.toml` are "nice to have" but not required for small projects.
+**This structure works well for most projects.** It's simple, clear, and easy for team members to understand.
 
 **Key points:**
 
 - Single config file at top level: `instrument-config.yaml`.
-- Your Python package (with `__init__.py`) can be directly in the root or in `src/` - both work!
+- Your Python package (with `__init__.py`) is directly in the root for simplicity
 - `devices/` holds all device abstractions and drivers.
 - `controllers/` holds high-level logic (live view, experimental protocols).
 - `gui/` holds GUI code (no business logic).
@@ -394,7 +343,7 @@ For many Wenzel-Lab devices (flow platforms, incubators, simple microscopes), a 
 
 **Guidelines:**
 
-- Put GUI code under `instrument/gui/` (or `src/instrument/gui/` if using src layout).
+- Put GUI code under `instrument/gui/`.
 - Keep one widget per file, e.g. `camera_widget.py`, `pump_widget.py`.
 - GUI should call controllers and devices via well-defined methods; it should not implement hardware logic directly.
 - Use Qt signals/slots to communicate between GUI and background workers, if/when you introduce threads.

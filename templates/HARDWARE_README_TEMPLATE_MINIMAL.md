@@ -1,6 +1,8 @@
-# [Project Name]
+# [Project Name] Open Source Love ❤️
 
 **Brief one-sentence description.**
+
+This project is a free and open-source design for [brief description]. For more resources on open-source hardware for bioimaging, see [LIBRE Hub](https://github.com/LIBREhub) and the [Wenzel Lab website](https://wenzel-lab.github.io/en/).
 
 [Optional: Add a hero image]
 
@@ -82,21 +84,21 @@ project-name/
 
 ---
 
-## Contributing
+## Contribute
 
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+Enjoy building and using your [Project Name]! We look forward to hearing about your experiences and any further improvements you might have.
 
-See [Contributing Guide](CONTRIBUTING.md) for details.
+**Make a pull request or open an issue.**
+
+For interactions in our team and with the community, we apply the [GOSH Code of Conduct](https://openhardware.science/gosh-code-of-conduct/).
 
 ---
 
 ## License
 
-This project is licensed under the **[LICENSE NAME]** License - see [LICENSE](LICENSE) file.
+[LICENSE NAME] by [Author Names] and contributors. This project is Open Source Hardware - please acknowledge us when using the hardware or sharing modifications.
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -109,7 +111,8 @@ This project is licensed under the **[LICENSE NAME]** License - see [LICENSE](LI
 
 ## Contact
 
-**Wenzel-Lab**: [https://wenzel-lab.github.io](https://wenzel-lab.github.io)  
+**Wenzel-Lab**: [https://wenzel-lab.github.io/en/](https://wenzel-lab.github.io/en/)  
+**LIBRE Hub**: [https://github.com/LIBREhub](https://github.com/LIBREhub)  
 **Issues**: [GitHub Issues](https://github.com/wenzel-lab/[project-name]/issues)
 
 ---

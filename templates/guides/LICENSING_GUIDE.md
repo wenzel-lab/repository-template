@@ -4,7 +4,7 @@ This guide explains which licenses to use for different types of content in Wenz
 
 ---
 
-## 📋 License Selection
+## License Selection
 
 ### Hardware Designs (CAD, PCB, Mechanical Drawings)
 
@@ -95,7 +95,7 @@ Then specify in your README:
 
 ---
 
-## 📝 How to Add a License
+## How to Add a License
 
 ### Step 1: Choose Your License
 
@@ -178,7 +178,7 @@ This work is distributed under the terms of the [License Name]
 
 ---
 
-## 📚 License Resources
+## License Resources
 
 - **CERN-OHL-S-2.0**: 
   - Full text: https://ohwr.org/cern_ohl_s_v2.txt
@@ -192,7 +192,7 @@ This work is distributed under the terms of the [License Name]
 
 ---
 
-## ✅ Quick Reference
+## Quick Reference
 
 | Content Type | Recommended License | Download Link |
 |--------------|---------------------|---------------|

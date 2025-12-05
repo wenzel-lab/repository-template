@@ -1,15 +1,17 @@
-# Wenzel-Lab Repository Template
+# Wenzel-Lab Repository Template Open Source Love ❤️
 
 The Wenzel-Lab template for building **Python-based laboratory instrument software** and **open hardware documentation** repositories.
 
 This repository serves as:
-- 📋 **Template** - Copy this structure when starting new projects
-- 📖 **Reference** - Find guides and conventions used in Wenzel-Lab
-- 🎯 **Standard** - Ensure consistency across all Wenzel-Lab repositories
+- **Template** - Copy this structure when starting new projects
+- **Reference** - Find guides and conventions used in Wenzel-Lab
+- **Standard** - Ensure consistency across all Wenzel-Lab repositories
+
+For more resources on open-source hardware for bioimaging, see [LIBRE Hub](https://github.com/LIBREhub) and the [Wenzel Lab website](https://wenzel-lab.github.io/en/).
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### For New Projects
 
@@ -25,8 +27,8 @@ This repository serves as:
 
 2. **Follow the guides:**
    - **New to software?** Start with [templates/guides/QUICK_START.md](templates/guides/QUICK_START.md) - explains basics in simple terms
-   - **Software projects**: See [templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md)
-   - **Hardware projects**: See [templates/README_TEMPLATES_README.md](templates/README_TEMPLATES_README.md)
+   - **Software projects**: [Guide to software design for instrument control](templates/guides/instrument-software-guide.md)
+   - **Hardware projects**: See [templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)
 
 3. **Customize:**
    - Replace placeholder text
@@ -35,11 +37,11 @@ This repository serves as:
 
 ---
 
-## 📚 Contents
+## Contents
 
 ### Software Development
 
-#### [templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md) ⭐ **Start Here for Software**
+#### [Guide to software design for instrument control](templates/guides/instrument-software-guide.md)
 
 Complete guide for building Python-based instrument control software:
 
@@ -99,8 +101,7 @@ Templates and guides for documenting open-source hardware projects:
 
 - **[HARDWARE_README_TEMPLATE.md](templates/HARDWARE_README_TEMPLATE.md)** - Full-featured template
 - **[HARDWARE_README_TEMPLATE_MINIMAL.md](templates/HARDWARE_README_TEMPLATE_MINIMAL.md)** - Simplified template
-- **[HARDWARE_README_GUIDE.md](templates/HARDWARE_README_GUIDE.md)** - How to use the templates
-- **[README_TEMPLATES_README.md](templates/README_TEMPLATES_README.md)** - Overview of all templates
+- **[hardware-readme-guide.md](templates/hardware-readme-guide.md)** - How to use the templates
 
 **Use these for:**
 - 3D printable devices
@@ -117,14 +118,13 @@ This template includes the standard structure for Wenzel-Lab instrument software
 ```
 repository-template/
 ├── README.md                      # This file
-├── INSTRUMENT_SOFTWARE_GUIDE.md   # Software development guide
+├── instrument-software-guide.md   # Software development guide
 ├── LICENSE                        # License file
 │
 ├── templates/                     # Hardware documentation templates
 │   ├── HARDWARE_README_TEMPLATE.md
 │   ├── HARDWARE_README_TEMPLATE_MINIMAL.md
-│   ├── HARDWARE_README_GUIDE.md
-│   └── README_TEMPLATES_README.md
+│   └── hardware-readme-guide.md
 │
 └── example-structure/             # Example file structure (see below)
     ├── instrument-config.yaml     # Main config file
@@ -161,7 +161,7 @@ instrument-name/
 └── tests/                         # Test files
 ```
 
-**See [templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md) for detailed explanations.**
+**See [Guide to software design for instrument control](templates/guides/instrument-software-guide.md) for detailed explanations.**
 
 ---
 
@@ -212,8 +212,8 @@ instrument-name/
 
 ### For Software Development
 
-- **[templates/guides/QUICK_START.md](templates/guides/QUICK_START.md)** - ⭐ **Start here if you're new to software!** Explains basics in simple terms
-- **[templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md)** - Complete software architecture guide
+- **[templates/guides/QUICK_START.md](templates/guides/QUICK_START.md)** - Start here if you're new to software! Explains basics in simple terms
+- **[Guide to software design for instrument control](templates/guides/instrument-software-guide.md)** - Complete software architecture guide
 - **[templates/guides/NAMING_CONVENTIONS.md](templates/guides/NAMING_CONVENTIONS.md)** - Naming guidelines for files, repos, and instruments
 - **[templates/guides/LICENSING_GUIDE.md](templates/guides/LICENSING_GUIDE.md)** - License selection and usage
 - **Python for the Lab** - Foundational concepts
@@ -225,7 +225,7 @@ instrument-name/
 
 - **[templates/HARDWARE_README_TEMPLATE.md](templates/HARDWARE_README_TEMPLATE.md)** - Full hardware README template
 - **[templates/HARDWARE_README_TEMPLATE_MINIMAL.md](templates/HARDWARE_README_TEMPLATE_MINIMAL.md)** - Minimal template
-- **[templates/HARDWARE_README_GUIDE.md](templates/HARDWARE_README_GUIDE.md)** - Template usage guide
+- **[templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)** - Template usage guide
 
 ### License Information
 
@@ -248,7 +248,7 @@ See existing Wenzel-Lab repositories for examples:
 
 ### Software Projects
 
-- [ ] Repository structure matches [templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md)
+- [ ] Repository structure matches [Guide to software design for instrument control](templates/guides/instrument-software-guide.md)
 - [ ] Single `instrument-config.yaml` at root
 - [ ] Device ABCs defined in `devices/base.py`
 - [ ] PyVISA used for SCPI devices (wrapped in ABCs)
@@ -278,13 +278,15 @@ Found an issue or have a suggestion for this template?
 
 ---
 
-## 📝 License
+## License
 
 This template repository is licensed under the same license as your project (typically GPL-3.0 or similar for open hardware).
 
+**This project is Open Source Hardware** - please acknowledge us when using this template or sharing modifications.
+
 ---
 
-## 🔗 Links
+## Links
 
 - **Wenzel-Lab GitHub**: [https://github.com/wenzel-lab](https://github.com/wenzel-lab)
 - **Wenzel-Lab Website**: [https://wenzel-lab.github.io](https://wenzel-lab.github.io)
@@ -292,26 +294,26 @@ This template repository is licensed under the same license as your project (typ
 
 ---
 
-## 📚 Quick Reference
+## Quick Reference
 
 ### Starting a New Software Project?
 
 1. **New to software?** Read [templates/guides/QUICK_START.md](templates/guides/QUICK_START.md) first
-2. Read [templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md](templates/guides/INSTRUMENT_SOFTWARE_GUIDE.md)
+2. Read [Guide to software design for instrument control](templates/guides/instrument-software-guide.md)
 3. Look at [example-structure/](example-structure/) for a complete example
 4. Copy the structure and customize for your project
 5. Run with: `python -m instrument.main` or `python instrument/main.py`
 
 ### Starting a New Hardware Project?
 
-1. Read [templates/README_TEMPLATES_README.md](templates/README_TEMPLATES_README.md)
+1. Read [templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)
 2. Choose a template (full or minimal)
 3. Customize for your project
 4. Add BOM and assembly instructions
 
 ### Starting a New Hardware Project?
 
-1. Read [templates/README_TEMPLATES_README.md](templates/README_TEMPLATES_README.md)
+1. Read [templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)
 2. Choose a template (full or minimal)
 3. Customize for your project
 4. Add BOM and assembly instructions
