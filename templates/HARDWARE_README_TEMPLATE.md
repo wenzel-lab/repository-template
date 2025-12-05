@@ -18,14 +18,12 @@ This project is a free and open-source design for [brief description]. For more 
 - [Features](#features)
 - [Repository Structure](#repository-structure)
 - [Bill of Materials (BOM)](#bill-of-materials-bom) *(if not using GitBuilding)*
-- [Getting Started](#getting-started)
-- [Assembly Instructions](#assembly-instructions)
+- [Documentation and Assembly Instructions](#documentation)
 - [Software & Firmware](#software--firmware)
 - [Usage](#usage)
-- [Documentation](#documentation)
 - [Contribute](#contribute)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ---
 
@@ -188,95 +186,26 @@ This project is a free and open-source design for [brief description]. For more 
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- [ ] 3D printer (or access to 3D printing service)
-- [ ] Soldering iron and basic tools
-- [ ] [Specific tool 1]
-- [ ] [Specific tool 2]
-
-#### Software Prerequisites
-- [ ] [Software 1] (version X.X or higher)
-- [ ] [Software 2] (version X.X or higher)
-- [ ] Python 3.X (if using Python control software)
-- [ ] [Other software requirements]
-
-#### Skills Required
-- Basic electronics assembly
-- 3D printing (if printing parts yourself)
-- [Specific skill if needed]
-
-### Installation
-
-#### 1. Clone the Repository
-
-```bash
-git clone https://github.com/wenzel-lab/[project-name].git
-cd [project-name]
-```
-
-#### 2. Prepare Design Files
-
-**For 3D Printing:**
-- Download STL files from `Build/CAD/`
-- Recommended print settings: [settings]
-- Material: [PLA/PETG/ABS/etc.]
-
-**For Laser Cutting:**
-- Download DXF files from `Build/Mechanical/`
-- Material thickness: [X] mm
-- [Other specifications]
-
-**For PCB Manufacturing:**
-- Upload Gerber files from `Build/PCB/gerber/` to PCB manufacturer
-- Recommended specifications: [thickness, layers, etc.]
-
-#### 3. Order Components
-
-- Review the [BOM](Build/BOM/BOM.csv)
-- Order components from listed suppliers
-- Estimated lead time: [X] weeks
-
-#### 4. Software Setup
-
-**If using Python control software:**
-
-```bash
-cd Software/control
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-**If using firmware:**
-
-```bash
-cd Software/firmware
-# Follow instructions in firmware/README.md
-```
-
----
-
-## Assembly Instructions
-
-### Overview
-
-- **Estimated Assembly Time**: [X] hours
-- **Difficulty Level**: [Beginner / Intermediate / Advanced]
-- **Tools Required**: [List of tools]
+## Documentation and Assembly Instructions
 
 ### Detailed Assembly Guide
 
-This repository provides documentation on how to build [the project]. Just follow the instructions here.
+For comprehensive, step-by-step assembly instructions with images, see:
+- **[Full Assembly Guide](Docs/Assembly/assembly-guide.md)**
+- **[GitBuilding Documentation](link-to-gitbuilding-site)** *(if using GitBuilding)*
 
 *[If using GitBuilding, add:]* This project is documented with [GitBuilding](https://gitbuilding.io/) - an Open Source project for documenting hardware projects. For more information on the GitBuilding project or how to install GitBuilding, please see the [GitBuilding website](https://gitbuilding.io/).
 
-For comprehensive, step-by-step assembly instructions with images, see:
+**When to use GitBuilding:**
+- Your project requires extensive documentation for community replication
+- You want interactive, structured documentation with searchable components
+- You have many components to document
 
-- **[Full Assembly Guide](Docs/Assembly/assembly-guide.md)**
-- **[GitBuilding Documentation](link-to-gitbuilding-site)** *(if using GitBuilding)*
+**When to skip GitBuilding:**
+- Projects that require high expertise to build (simpler documentation needs, but always include complete source files)
+- Early stages of development
+- You prefer static Markdown documentation
+
 
 ### Quick Assembly Steps
 
@@ -312,12 +241,6 @@ For comprehensive, step-by-step assembly instructions with images, see:
 - [Safety warning 2]
 - [Safety warning 3]
 
-### Common Assembly Issues
-
-See [Troubleshooting Guide](Docs/Troubleshooting.md) for solutions to common problems:
-- Issue 1: [Brief description] → Solution
-- Issue 2: [Brief description] → Solution
-
 ---
 
 ## Software & Firmware
@@ -334,7 +257,7 @@ See [Troubleshooting Guide](Docs/Troubleshooting.md) for solutions to common pro
 3. Upload firmware to microcontroller
 4. Configure settings (see `firmware/config/`)
 
-**Documentation**: See [firmware/README.md](Software/firmware/README.md)
+**Documentation and Assembly Instructions**: See [firmware/README.md](Software/firmware/README.md)
 
 ### Control Software
 
@@ -372,8 +295,6 @@ cp Software/config/config.example.yaml Software/config/config.yaml
 
 This repository provides documentation on how to build [the project]. Just follow the instructions here.
 
-*[If using GitBuilding, add:]* This project is documented with [GitBuilding](https://gitbuilding.io/) - an Open Source project for documenting hardware projects. For more information on the GitBuilding project or how to install GitBuilding, please see the [GitBuilding website](https://gitbuilding.io/).
-
 ### Basic Operation
 
 1. **Power On**
@@ -386,17 +307,6 @@ This repository provides documentation on how to build [the project]. Just follo
 
 3. **Normal Operation**
    - [Step-by-step usage instructions]
-
-### Advanced Features
-
-- **Feature 1**: [Description and usage]
-- **Feature 2**: [Description and usage]
-
-### Maintenance
-
-- **Regular Maintenance**: [Frequency and tasks]
-- **Cleaning**: [Instructions]
-- **Replacement Parts**: [Common parts that may need replacement]
 
 ### Troubleshooting
 
@@ -413,37 +323,6 @@ For common issues and solutions, see [Troubleshooting Guide](Docs/Troubleshootin
 - **[Technical Specifications](Docs/Technical_Specs.md)** - Technical details and performance metrics
 - **[Troubleshooting Guide](Docs/Troubleshooting.md)** - Common issues and solutions
 - **[References](Docs/References/)** - Related papers, datasheets, and resources
-
-### GitBuilding Documentation
-
-*[Include this section only if using GitBuilding - typically for accessible projects aimed at community replication]*
-
-This project is documented with [GitBuilding](https://gitbuilding.io/) - an Open Source project for documenting hardware projects. For more information on the GitBuilding project or how to install GitBuilding, please see the [GitBuilding website](https://gitbuilding.io/).
-
-**View Online**: [Link to your GitBuilding documentation site]
-
-**Build Locally**:
-```bash
-# Install GitBuilding
-pip install gitbuilding
-
-# Build documentation
-cd .gitbuilding
-gitbuilding build
-
-# View documentation
-gitbuilding serve
-```
-
-**When to use GitBuilding:**
-- Your project requires extensive documentation for community replication
-- You want interactive, structured documentation with searchable components
-- You have many components to document
-
-**When to skip GitBuilding:**
-- Projects that require high expertise to build (simpler documentation needs, but always include complete source files)
-- Early stages of development
-- You prefer static Markdown documentation
 
 ---
 
@@ -475,35 +354,30 @@ We welcome contributions in many forms:
    - Test thoroughly
    - Submit a pull request with a clear description
 
-### Contact
+### Contact & Support
 
-**Wenzel-Lab**: [https://wenzel-lab.github.io/en/](https://wenzel-lab.github.io/en/)  
-**LIBRE Hub**: [https://github.com/LIBREhub](https://github.com/LIBREhub)  
-**Report Issues**: [GitHub Issues](https://github.com/wenzel-lab/[project-name]/issues)  
-**Discussions**: [GitHub Discussions](https://github.com/wenzel-lab/[project-name]/discussions) *(if enabled)*
+### Wenzel-Lab
+
+**Lab Website**: [https://wenzel-lab.github.io](https://wenzel-lab.github.io)
+
+**GitHub Organization**: [@wenzel-lab](https://github.com/wenzel-lab)
+
+**LIBRE Hub**: Find more open-source hardware for bioimaging on the [LIBRE hub website](https://github.com/LIBREhub)
+
+### Project Maintainers
+
+- **[Name 1](mailto:email@example.com)** - [Role] - [@github-username](https://github.com/username)
+- **[Name 2](mailto:email@example.com)** - [Role] - [@github-username](https://github.com/username)
+
+### Getting Help
+
+- **Report Issues**: [GitHub Issues](https://github.com/wenzel-lab/[project-name]/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/wenzel-lab/[project-name]/discussions) *(if enabled)*
+- **Email**: [project-email@example.com] *(if applicable)*
+
+### Additional Resources
 
 For more resources on open-source hardware for bioimaging, see [LIBRE Hub](https://github.com/LIBREhub) and the [Wenzel Lab website](https://wenzel-lab.github.io/en/).
-
----
-
-## License
-
-[LICENSE NAME] by [Author Names] and contributors. This project is Open Source Hardware - please acknowledge us when using the hardware or sharing modifications.
-
-See the [LICENSE](LICENSE) file for full details.
-
-### License Summary
-
-- **Hardware Designs**: [License, e.g., CERN-OHL-S-2.0, GPL-3.0]
-- **Software**: [License, e.g., GPL-3.0, MIT]
-- **Documentation**: [License, e.g., CC-BY-4.0]
-
-### What This Means
-
-- You can use, modify, and distribute this project
-- Commercial use is [allowed / not allowed] *(specify)*
-- You must include attribution
-- You must share modifications under the same license (for copyleft licenses)
 
 ---
 
@@ -543,36 +417,26 @@ We use the following open-source components and libraries:
 
 ---
 
-## Contact & Support
+## License
 
-### Wenzel-Lab
+[LICENSE NAME] by [Author Names] and contributors. This project is Open Source Hardware - please acknowledge us when using the hardware or sharing modifications.
 
-**Institution**: [IIBM, Universidad Católica de Chile](https://iibm.uc.cl/)
+See the [LICENSE](LICENSE) file for full details.
 
-**Lab Website**: [https://wenzel-lab.github.io](https://wenzel-lab.github.io)
+### License Summary
 
-**GitHub Organization**: [@wenzel-lab](https://github.com/wenzel-lab)
+- **Hardware Designs**: [License, e.g., CERN-OHL-S-2.0, GPL-3.0]
+- **Software**: [License, e.g., GPL-3.0, MIT]
+- **Documentation**: [License, e.g., CC-BY-4.0]
 
-**LIBRE Hub**: Find more open-source hardware for bioimaging on the [LIBRE hub website](https://github.com/LIBREhub)
+### What This Means
 
-### Project Maintainers
+- You can use, modify, and distribute this project
+- Commercial use is [allowed / not allowed] *(specify)*
+- You must include attribution
+- You must share modifications under the same license (for copyleft licenses)
 
-- **[Name 1](mailto:email@example.com)** - [Role] - [@github-username](https://github.com/username)
-- **[Name 2](mailto:email@example.com)** - [Role] - [@github-username](https://github.com/username)
-
-### Getting Help
-
-- **Report Issues**: [GitHub Issues](https://github.com/wenzel-lab/[project-name]/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/wenzel-lab/[project-name]/discussions) *(if enabled)*
-- **Email**: [project-email@example.com] *(if applicable)*
-
-### Additional Resources
-
-For more resources on open-source hardware for bioimaging, see [LIBRE Hub](https://github.com/LIBREhub) and the [Wenzel Lab website](https://wenzel-lab.github.io/en/).
-
----
-
-## Citation
+### Citation
 
 If you use this project in your research, please cite:
 
@@ -611,15 +475,6 @@ Or use the citation format provided in [CITATION.cff](CITATION.cff) if available
 - [ ] Feature 4
 
 See [Projects](https://github.com/wenzel-lab/[project-name]/projects) for detailed roadmap.
-
----
-
-## Related Projects
-
-Other projects from Wenzel-Lab:
-- [Project 1](https://github.com/wenzel-lab/project1) - [Description]
-- [Project 2](https://github.com/wenzel-lab/project2) - [Description]
-- [Project 3](https://github.com/wenzel-lab/project3) - [Description]
 
 ---
 
