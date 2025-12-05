@@ -8,11 +8,11 @@ This guide explains which licenses to use for different types of content in Wenz
 
 ### Hardware Designs (CAD, PCB, Mechanical Drawings)
 
-**Use: CERN Open Hardware Licence Version 2 - Weakly Reciprocal (CERN-OHL-S-2.0)**
+**Use: CERN Open Hardware Licence Version 2 - Weakly Reciprocal (CERN-OHL-W-2.0)**
 
 - **Why**: Specifically designed for open hardware
 - **What it means**: Others can use, modify, and distribute your hardware designs, but if they modify and distribute, they must share their modifications
-- **Download**: https://ohwr.org/cern_ohl_s_v2.txt
+- **Download**: https://ohwr.org/cern_ohl_w_v2.txt
 
 **When to use:**
 - 3D printable parts (STL, STEP files)
@@ -42,11 +42,11 @@ This guide explains which licenses to use for different types of content in Wenz
 
 ---
 
-### Documentation (READMEs, Manuals, Guides)
+### Alternative for Documents (READMEs, Manuals, Guides)
 
 **Use: Creative Commons Attribution 4.0 (CC-BY-4.0)**
 
-- **Why**: Designed for creative works and documentation
+- **Why**: Designed for creative works and documentation but not hardware spefic
 - **What it means**: Others can use, modify, and distribute your documentation, as long as they give credit
 - **Download**: https://creativecommons.org/licenses/by/4.0/legalcode
 
@@ -80,7 +80,6 @@ If you have distinct hardware and software components:
 ```
 LICENSE              # CERN-OHL-S-2.0 for hardware
 LICENSE-SOFTWARE     # GPL-3.0 for software
-LICENSE-DOCS         # CC-BY-4.0 for documentation
 ```
 
 Then specify in your README:
@@ -90,7 +89,6 @@ Then specify in your README:
 
 - **Hardware**: CERN Open Hardware Licence Version 2 - Weakly Reciprocal
 - **Software**: GNU General Public License Version 3
-- **Documentation**: Creative Commons Attribution 4.0
 ```
 
 ---
@@ -113,7 +111,7 @@ Download the license text from the official source and save it as `LICENSE` in y
 - Download from: https://www.gnu.org/licenses/gpl-3.0.txt
 - Save as: `LICENSE`
 
-**For documentation:**
+**For documents:**
 - Download from: https://creativecommons.org/licenses/by/4.0/legalcode
 - Save as: `LICENSE-DOCS` (or add to main LICENSE if only docs)
 
@@ -198,10 +196,6 @@ This work is distributed under the terms of the [License Name]
 |--------------|---------------------|---------------|
 | Hardware designs | CERN-OHL-S-2.0 | https://ohwr.org/cern_ohl_s_v2.txt |
 | Software code | GPL-3.0 | https://www.gnu.org/licenses/gpl-3.0.txt |
-| Documentation | CC-BY-4.0 | https://creativecommons.org/licenses/by/4.0/legalcode |
+| Documents | CC-BY-4.0 | https://creativecommons.org/licenses/by/4.0/legalcode |
 
----
-
-**Last Updated**: 2025-01-XX  
-**Maintained by**: Wenzel-Lab
 
