@@ -6,7 +6,7 @@ This guide explains how to use the hardware README templates for Wenzel-Lab open
 
 ## Templates Available
 
-### [HARDWARE_README_TEMPLATE.md](HARDWARE_README_TEMPLATE.md) (Recommended)
+### [HARDWARE_README_TEMPLATE.md](HARDWARE_README_TEMPLATE.md)
 Full-featured template for complete hardware projects.
 
 **Use this when:**
