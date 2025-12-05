@@ -1,4 +1,4 @@
-# Wenzel-Lab Repository Template Open Source Love ❤️
+# Wenzel-Lab Repository Template [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 The Wenzel-Lab template for building **Python-based laboratory instrument software** and **open hardware documentation** repositories.
 
