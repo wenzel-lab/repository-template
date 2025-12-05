@@ -55,18 +55,15 @@ Complete guide for building Python-based instrument control software:
 - **AI assistant instructions** - How AI should follow these conventions
 
 **Key principles:**
-- ✅ Single config file at root (`instrument-config.yaml`)
-- ✅ ABC-based device abstraction (no global state)
-- ✅ Controllers separate from GUI
-- ✅ Simulation mode for all devices
-- ✅ Simple, maintainable architecture
+- Single config file at root (`instrument-config.yaml`)
+- ABC-based device abstraction (no global state)
+- Controllers and models separate from GUI (viewer)
+- Simulation mode for all devices
+- Simple, maintainable architecture
 
-**Note for beginners:** The guide explains why we use `src/` folders and `pyproject.toml`, but also shows simpler alternatives if you prefer!
-
-#### [templates/guides/QUICK_START.md](templates/guides/QUICK_START.md) ⭐ **New to Software? Start Here!**
+#### [templates/guides/QUICK_START.md](templates/guides/QUICK_START.md) **New to Software? Start Here!**
 
 Beginner-friendly guide explaining:
-- What `pyproject.toml` and `src/` folders are (in simple terms)
 - When to use simple vs. advanced structure
 - Step-by-step getting started
 
@@ -78,7 +75,7 @@ Guidelines for naming files, folders, repositories, and instruments:
 
 - **File naming** - Use kebab-case (lowercase with hyphens)
 - **Repository naming** - Short, descriptive, include acronyms
-- **Instrument acronyms** - Playful, culturally resonant names (RITMO, CLAVE, RIO, etc.)
+- **Instrument acronyms** - Latin American, playful, culturally resonant names (RITMO, CLAVE, RIO, etc.)
 - **Module labeling** - Consistent naming across projects
 
 ### Licensing
@@ -89,7 +86,7 @@ Guide for choosing and applying licenses:
 
 - **Hardware designs** - CERN Open Hardware Licence 2.0 (Weakly Reciprocal)
 - **Software code** - GNU General Public License 3.0 (GPL-3.0)
-- **Documentation** - Creative Commons Attribution 4.0 (CC-BY-4.0)
+- **Alternative for documents** - Creative Commons Attribution 4.0 (CC-BY-4.0)
 
 License files are available in `templates/` for easy copying.
 
@@ -105,42 +102,14 @@ Templates and guides for documenting open-source hardware projects:
 
 **Use these for:**
 - 3D printable devices
+- Optomechanic projects (microscopes etc.)
 - Electronic projects with PCBs
 - Mechanical assemblies
 - Projects with associated software/firmware
 
 ---
 
-## 📁 Repository Structure
-
-This template includes the standard structure for Wenzel-Lab instrument software:
-
-```
-repository-template/
-├── README.md                      # This file
-├── instrument-software-guide.md   # Software development guide
-├── LICENSE                        # License file
-│
-├── templates/                     # Hardware documentation templates
-│   ├── HARDWARE_README_TEMPLATE.md
-│   ├── HARDWARE_README_TEMPLATE_MINIMAL.md
-│   └── hardware-readme-guide.md
-│
-└── example-structure/             # Example file structure (see below)
-    ├── instrument-config.yaml     # Main config file
-    ├── pyproject.toml
-    ├── src/
-    │   └── instrument/
-    │       ├── __init__.py
-    │       ├── config.py
-    │       ├── devices/
-    │       ├── controllers/
-    │       ├── gui/
-    │       └── main.py
-    └── tests/
-```
-
-### Example Structure
+### Example Repository Structure
 
 See **[example-structure/](example-structure/)** for a complete reference implementation.
 
@@ -276,54 +245,16 @@ Found an issue or have a suggestion for this template?
 2. **Submit a pull request** with improvements
 3. **Share examples** from your projects
 
----
-
-## License
-
-This template repository is licensed under the same license as your project (typically GPL-3.0 or similar for open hardware).
-
-**This project is Open Source Hardware** - please acknowledge us when using this template or sharing modifications.
-
----
-
-## Links
-
+Contacts and more:
 - **Wenzel-Lab GitHub**: [https://github.com/wenzel-lab](https://github.com/wenzel-lab)
 - **Wenzel-Lab Website**: [https://wenzel-lab.github.io](https://wenzel-lab.github.io)
 - **LIBREhub**: [https://github.com/LIBREhub](https://github.com/LIBREhub)
 
 ---
 
-## Quick Reference
+## License
 
-### Starting a New Software Project?
+**This project is Open Source** - please acknowledge us when using this template or sharing modifications externally.
 
-1. **New to software?** Read [templates/guides/QUICK_START.md](templates/guides/QUICK_START.md) first
-2. Read [Guide to software design for instrument control](templates/guides/instrument-software-guide.md)
-3. Look at [example-structure/](example-structure/) for a complete example
-4. Copy the structure and customize for your project
-5. Run with: `python -m instrument.main` or `python instrument/main.py`
 
-### Starting a New Hardware Project?
 
-1. Read [templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)
-2. Choose a template (full or minimal)
-3. Customize for your project
-4. Add BOM and assembly instructions
-
-### Starting a New Hardware Project?
-
-1. Read [templates/hardware-readme-guide.md](templates/hardware-readme-guide.md)
-2. Choose a template (full or minimal)
-3. Customize for your project
-4. Add BOM and assembly instructions
-
----
-
-**Last Updated**: 2025-01-XX  
-**Maintained by**: Wenzel-Lab  
-**Part of**: Wenzel-Lab Documentation Standards
-
----
-
-*This template ensures consistency, maintainability, and reproducibility across all Wenzel-Lab projects. Use it as a starting point for new repositories and as a reference for existing ones.*
