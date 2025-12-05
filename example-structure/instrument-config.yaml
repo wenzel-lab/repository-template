@@ -1,0 +1,61 @@
+# instrument-config.yaml
+# Main configuration file for the instrument
+# This is the single source of truth for instrument settings
+
+instrument_name: "example-instrument"
+
+simulation: false  # Set to true to use simulated devices
+
+# Camera configuration
+camera:
+  type: "Daheng"  # or "Toupcam", "FLIR", etc.
+  serial_number: "GX123456"
+  exposure_ms: 20.0
+  pixel_format: "MONO12"
+
+# Pump configurations
+pumps:
+  - name: "sample_pump"
+    backend: "pyvisa"  # or "serial", "gpio"
+    resource: "USB0::0x1AB1::0x0E11::DP8C123456789::INSTR"
+    flow_unit: "uL/min"
+    max_flow_rate: 1000.0
+  
+  - name: "sheath_pump"
+    backend: "serial"
+    port: "/dev/ttyUSB0"
+    baudrate: 115200
+    flow_unit: "uL/min"
+    max_flow_rate: 5000.0
+
+# Valve configurations
+valves:
+  - name: "sorting_valve"
+    backend: "gpio"
+    channel: 17
+    type: "solenoid"
+  
+  - name: "sample_injection_valve"
+    backend: "serial"
+    port: "/dev/ttyUSB1"
+    baudrate: 9600
+
+# Sensor configurations
+sensors:
+  - name: "pressure_sensor"
+    backend: "serial"
+    port: "/dev/ttyUSB2"
+    baudrate: 115200
+    unit: "mbar"
+
+# Data paths
+paths:
+  data_root: "/data/experiments"
+  log_dir: "/data/logs"
+
+# Experiment defaults
+experiment:
+  default_duration_s: 60.0
+  auto_save: true
+  file_format: "ome-tiff"  # or "zarr", "tiff"
+
